@@ -1,0 +1,56 @@
+{
+  "capture": {
+    "source": "screen",
+    "monitor": 1,
+    "region": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "player_regions": {
+    "team1": [
+      {"x": 14, "y": 929, "width": 141, "height": 75, "name": "player1"},
+      {"x": 172, "y": 929, "width": 141, "height": 75, "name": "player2"},
+      {"x": 325, "y": 929, "width": 141, "height": 75, "name": "player3"},
+      {"x": 479, "y": 929, "width": 141, "height": 75, "name": "player4"},
+      {"x": 634, "y": 929, "width": 141, "height": 75, "name": "player5"}
+    ],
+    "team2": [
+      {"x": 1147, "y": 929, "width": 141, "height": 75, "name": "player1"},
+      {"x": 1300, "y": 929, "width": 141, "height": 75, "name": "player2"},
+      {"x": 1459, "y": 929, "width": 141, "height": 75, "name": "player3"},
+      {"x": 1609, "y": 929, "width": 141, "height": 75, "name": "player4"},
+      {"x": 1760, "y": 929, "width": 141, "height": 75, "name": "player5"}
+    ]
+  },
+  "ocr": {
+    "tesseract_config": "--psm 8 -c tessedit_char_whitelist=0123456789",
+    "name_tesseract_config": "--psm 8 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-",
+    "hp_region_offset": {
+      "x": 87,
+      "y": 1,
+      "width": 55,
+      "height": 46
+    },
+    "name_region_offset": {
+      "x": 80,
+      "y": 45,
+      "width": 100,
+      "height": 25
+    }
+  },
+  "detection": {
+    "fps": 5,
+    "alive_threshold": 0.3,
+    "grayscale_threshold": 100
+  },
+  "output": {
+    "console": true,
+    "file": true,
+    "file_path": "output.json",
+    "http_api": false,
+    "api_port": 8080
+  }
+}
